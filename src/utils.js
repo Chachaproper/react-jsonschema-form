@@ -17,6 +17,8 @@ import URLWidget from "./components/widgets/URLWidget";
 import TextareaWidget from "./components/widgets/TextareaWidget";
 import HiddenWidget from "./components/widgets/HiddenWidget";
 import ColorWidget from "./components/widgets/ColorWidget";
+import FileWidget from "./components/widgets/FileWidget";
+
 
 
 const altWidgetMap = {
@@ -36,6 +38,7 @@ const altWidgetMap = {
     "alt-date": AltDateWidget,
     "alt-datetime": AltDateTimeWidget,
     color: ColorWidget,
+    file: FileWidget,
   },
   number: {
     updown: UpDownWidget,
@@ -57,6 +60,7 @@ const stringFormatWidgets = {
   "ipv4": TextWidget,
   "ipv6": TextWidget,
   "uri": URLWidget,
+  // "data-url": FileWidget,
 };
 
 export function getDefaultRegistry() {
